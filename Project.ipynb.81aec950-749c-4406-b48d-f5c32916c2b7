@@ -1,0 +1,303 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "name=[]\n",
+    "address=[]\n",
+    "Class=[]\n",
+    "Math=[]\n",
+    "Science=[]\n",
+    "English=[]\n",
+    "Dutch=[]\n",
+    "Arts=[]\n",
+    "for i,j,k,l,m,n,o,p in zip(name,address,Class,Math,Science,English,Dutch,Arts):\n",
+    "    print(i,j,k,l,m,n,o)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter student name: marg\n",
+      "enter student address: ff\n",
+      "enter class: 6\n",
+      "enter math grade: 55\n",
+      "enter science grade: 33\n",
+      "enter english grade: 44\n",
+      "enter dutch grade: 77\n",
+      "enter Arts grade: 88\n"
+     ]
+    }
+   ],
+   "source": [
+    "def adding_a_record(name,address,Class,Math,Science,English,Dutch,Arts):\n",
+    "    name.append(input(\"enter student name:\"))\n",
+    "    address.append(input(\"enter student address:\"))\n",
+    "    Class.append(input(\"enter class:\"))\n",
+    "    Math.append(input(\"enter math grade:\"))\n",
+    "    Science.append(input(\"enter science grade:\"))\n",
+    "    English.append(input(\"enter english grade:\"))\n",
+    "    Dutch.append(input(\"enter dutch grade:\"))\n",
+    "    Arts.append(input(\"enter Arts grade:\"))\n",
+    "    \n",
+    "adding_a_record(name,address,Class,Math,Science,English,Dutch,Arts) \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "paula st 5 55 66 777 55 44\n",
+      "marg ff 6 55 33 44 77 88\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i,j,k,l,m,n,o,p in zip(name,address,Class,Math,Science,English,Dutch,Arts):\n",
+    "    print(i,j,k,l,m,n,o,p)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def deleting_a_record(name,address,Class,Math,Science,English,Dutch,Arts):\n",
+    "    name.remove(input(\"enter name:\"))\n",
+    "    \n",
+    "deleting_a_record(name,address,Class,Math,Science,English,Dutch,Arts)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter name:  paula\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "paula st 5 55 66 777 55 44\n",
+      "student not found\n"
+     ]
+    }
+   ],
+   "source": [
+    "def search_student(name):\n",
+    "    sname= input(\"enter name: \")\n",
+    "    for i,j,k,l,m,n,o,p in zip(name,address,Class,Math,Science,English,Dutch,Arts):\n",
+    "        if sname ==i:\n",
+    "            print(i,j,k,l,m,n,o,p) \n",
+    "        else:\n",
+    "            print(\"student not found\")\n",
+    "            \n",
+    "search_student(name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def edit_record(name,address,Class,Math,Science,English,Dutch,Arts):\n",
+    "search_student(name)\n",
+    "    \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def edit_record(name,address,Class,Math,Science,English,Dutch,Arts):\n",
+    "\n",
+    "\n",
+    "x=float(input(\"->Type 1, if you want to edit the name of the student\"\n",
+    "       \"  ->Type 2, if you want to edit the address of student\"\n",
+    "      \"   ->Type 3 if you want to edit class of student\"\n",
+    "      \"   ->Type 4 if you want to edit math grade\"\n",
+    "        \" ->Type 5 if you want to edit science grade\"\n",
+    "        \" ->Type 6 if you want to edit english grade\"\n",
+    "        \"->Type 4 if you want to edit dutch grade\"\n",
+    "        \"->Type 4 if you want to edit art grade\"))\n",
+    "if x==1:\n",
+    "    index.update(input(\"Enter name\"))\n",
+    "if x==2:\n",
+    "    index.update(input(\"enter adress\"))\n",
+    "    \n",
+    "edit_record(name,address,Class,Math,Science,English,Dutch,Arts)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Margot station 5th grade 10 50 80 70 80\n",
+      "Paula staation 6th 0 30 45 90 80\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i,j,k,l,m,n,o,p in zip(name,address,Class,Math,Science,English,Dutch,Arts):\n",
+    "    print(i,j,k,l,m,n,o,p)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "-----Student record- Option terminal-----\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "->Type 1, if you want to add a new record  ->Type 2, if you want to edit a record   ->Type 3 if you want to delete a record   ->Type 4 if you want to search a student 4\n",
+      "enter name:  Margot\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Margot station 5th grade 10 50 80 70\n",
+      "4.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"-----Student record- Option terminal-----\")\n",
+    "\n",
+    "x=float(input(\"->Type 1, if you want to add a new record\"\n",
+    "       \"  ->Type 2, if you want to edit a record\"\n",
+    "      \"   ->Type 3 if you want to delete a record\"\n",
+    "      \"   ->Type 4 if you want to search a student\"))\n",
+    "if x==1:\n",
+    "    adding_a_record(name,address,Class,Math,Science,English,Dutch,Arts)\n",
+    "if x==3:\n",
+    "    deleting_a_record(name,address,Class,Math,Science,English,Dutch,Arts)\n",
+    "if x==4:\n",
+    "    search_student(name)\n",
+    "else:\n",
+    "    print(\"no command saved for entered number\")    \n",
+    "\n",
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "To do:\n",
+    "    edit student record\n",
+    "    search for student record\n",
+    "    sum, average of student \n",
+    "    average for students in the same class, show who has the highest average"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def total_grade(i,j,k,l,m,n,o,p):\n",
+    "    a=i+j+k+l+m+n+o+p\n",
+    "    return a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "'function' object does not support item assignment",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-12-088616d79ad5>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mnumpy\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0mnp\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0;32mfor\u001b[0m \u001b[0mindex\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mrange\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mlen\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mname\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 3\u001b[0;31m     \u001b[0mtotal_grade\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mindex\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m=\u001b[0m \u001b[0mMath\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mindex\u001b[0m\u001b[0;34m]\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0mScience\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mindex\u001b[0m\u001b[0;34m]\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0mDutch\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mindex\u001b[0m\u001b[0;34m]\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0mArts\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mindex\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      4\u001b[0m \u001b[0ma\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mnp\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mmean\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mMath\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0mb\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mnp\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mmean\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mScience\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;31mTypeError\u001b[0m: 'function' object does not support item assignment"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "for index in range(len(name)):\n",
+    "    total_grade[index]= Math[index] + Science[index] + Dutch[index] + Arts[index]\n",
+    "a=np.mean(Math)\n",
+    "b=np.mean(Science)\n",
+    "c=np.mean(Dutch)\n",
+    "d=np.mean(Arts)\n",
+    "max(a,b,c,d)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
